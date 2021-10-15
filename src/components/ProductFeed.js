@@ -21,7 +21,6 @@ function ProductFeed({products}) {
 
     return (
 
-
         <div className="grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:-mt-52 mx-auto">
             
             { productCards(0,4)}
@@ -30,7 +29,7 @@ function ProductFeed({products}) {
 
             <div className="md:col-span-2">{productCards(4,5)}</div> 
             {productCards(5,products.length)}
-            
+
         </div>
     )
 }
