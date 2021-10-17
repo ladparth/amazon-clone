@@ -1,4 +1,4 @@
-import firebase from "firebase";
+import { initializeApp } from "firebase-admin";
 
 
 const firebaseConfig = {
@@ -9,3 +9,7 @@ const firebaseConfig = {
     messagingSenderId: "487251503358",
     appId: "1:487251503358:web:02ed143940e39003229daf"
   };
+
+const app = initializeApp(firebaseConfig)
+
+export default app;

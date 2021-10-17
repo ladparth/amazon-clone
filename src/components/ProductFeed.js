@@ -27,7 +27,10 @@ function ProductFeed({products}) {
             
             <img className="md:col-span-full cursor-pointer" src="https://links.papareact.com/dyz" alt="" />
 
-            <div className="md:col-span-2">{productCards(4,5)}</div> 
+            <div className="md:col-span-2">
+                {productCards(4,5)}
+            </div> 
+            
             {productCards(5,products.length)}
 
         </div>
