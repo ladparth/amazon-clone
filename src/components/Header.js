@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image"
-import {signIn,signOut,userSession, useSession} from 'next-auth/client'
+import {signIn,signOut,useSession} from 'next-auth/client'
 import { useRouter } from 'next/dist/client/router'
 import {
     MenuIcon,
@@ -46,7 +46,7 @@ function Header() {
                         </p>
                         <p className="font-extrabold md:text-sm">Account & Lists</p>
                     </div>
-                    <div className="link">
+                    <div onClick={()=>session && router.push('/orders')} className="link">
                         <p>Returns</p>
                         <p className="font-extrabold md:text-sm">& Orders</p>
                     </div>

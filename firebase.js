@@ -1,6 +1,5 @@
-import { initializeApp } from "firebase-admin";
-
-
+import { initializeApp } from 'firebase/app';
+import {getFirestore} from 'firebase/firestore'
 const firebaseConfig = {
     apiKey: "AIzaSyBBN97q-nDAaj5PGgfMCWF1TWiCjVwFNLo",
     authDomain: "clone-af1e7.firebaseapp.com",
@@ -10,6 +9,7 @@ const firebaseConfig = {
     appId: "1:487251503358:web:02ed143940e39003229daf"
   };
 
-const app = initializeApp(firebaseConfig)
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
 
-export default app;
+export default db;
